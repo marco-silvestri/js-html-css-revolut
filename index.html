@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="navmenu">
-        <ul class="navmenu--left-menu">
+        <ul class="navmenu__left-menu">
             <li>
                 <img class="navmenu__logo" src="assets/img/logo-revolut.png" alt="Revolut LOGO">
             </li>
@@ -18,7 +18,7 @@
                 <a href="#">Business</a>
             </li>
         </ul>
-        <ul class="navmenu--right-menu">
+        <ul class="navmenu__right-menu">
             <li>
                 <a href="">Tariffazione</a>
             </li>
@@ -27,6 +27,17 @@
             </li>
             <li>
                 <a href="">Prodotti</a>
+                <div class="navmenu__right-menu__dropdown">
+                    <ul>
+                        <li>Trasferimenti di denaro</li>
+                        <li>Vault</li>
+                        <li>Gestione budget</li>
+                        <li class="u--space-bottom">Perk<span class="navmenu__right-menu__dropdown--highglight">beta</span></li>
+                        <li>Criptovaluta</li>
+                        <li>Assicurazione smartphone</li>
+                        <li>Assicurazione medica internazionale</li>
+                    </ul>
+                </div>
             </li>
             <li>
                 <a href="">Azienda</a>
@@ -35,12 +46,14 @@
                 <a href="">Aiuto</a>
             </li>
             <li>
-                <a href="" class="navmenu--right-menu--language">IT</a>
+                <a href="" class="navmenu__right-menu__language">IT</a>
             </li>
             <li>
                 <span class="brand-btn">Scarica l&apos;app</span>
             </li>
         </ul>
     </div>
+    <script src="assets/script/jquery-3.5.0.min.js"></script>
+    <script src="assets/script/main.js"></script>
 </body>
 </html>
