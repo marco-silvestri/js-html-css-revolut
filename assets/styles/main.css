@@ -62,8 +62,12 @@ a:hover {
     display: none; /* jQuery */
     position: absolute;
     top: 50px;
-    right: 25%;
+    right: -100%;
     box-shadow: 0px 0px 10px 0px #CCCCCC;
+}
+
+.navmenu__right-menu li {
+    position: relative;
 }
 
 .navmenu__right-menu__dropdown ul li {

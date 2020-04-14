@@ -8,9 +8,16 @@
 var dropdownElement = $('.navmenu__right-menu li').children();
 var dropdownMenu = dropdownElement.next();
 
-dropdownElement.click(function (e) { 
-    e.preventDefault();
+// Mouse click
+dropdownElement.click(showDropdownMenu);
+
+/* Mouse enter/leave
+dropdownElement.mouseenter(showDropdownMenu);
+dropdownElement.mouseleave(showDropdownMenu);
+*/
+
+function showDropdownMenu() {
     var dropdownChildren = $(this).next();
     dropdownChildren.toggle();
     dropdownMenu.not(dropdownChildren).hide();
-});
+}
