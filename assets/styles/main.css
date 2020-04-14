@@ -1,0 +1,38 @@
+/* Reset */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+
+}
+
+/* Wrappers */
+
+.navmenu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 50px;
+    width: 80%;
+    margin: auto;
+    line-height: 2;
+}
+
+.navmenu__logo {
+    max-width: 100px;
+    vertical-align: middle;
+}
+
+.navmenu ul li {
+    display: inline;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
