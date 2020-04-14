@@ -6,10 +6,11 @@
 // References
 
 var dropdownElement = $('.navmenu__right-menu li').children();
+var dropdownMenu = dropdownElement.next();
 
 dropdownElement.click(function (e) { 
     e.preventDefault();
     var dropdownChildren = $(this).next();
-    //dropdownChildren.addClass('active');
     dropdownChildren.toggle();
+    dropdownMenu.not(dropdownChildren).hide();
 });
